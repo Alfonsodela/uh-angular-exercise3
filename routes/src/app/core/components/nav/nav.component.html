@@ -1,0 +1,13 @@
+<header>
+    <div class="nav__title">Routes</div>
+    <nav>
+      <ul class="nav-gallery">
+        <li class="nav-gallery__item" *ngFor="let element of nav">
+            <a class="nav-gallery__item--link" routerLink="{{ element.link }}"
+            >
+            {{ element.name | lowercase }}
+        </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
